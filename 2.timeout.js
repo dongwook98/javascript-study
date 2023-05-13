@@ -5,7 +5,7 @@ function execute() {
   }, 3000);
   setTimeout(() => {
     console.log('4'); // 4번째실행
-  }, 1000);
+  }, 3000);
   setTimeout(() => {
     console.log('5'); // 5번째실행
   }, 3000);
