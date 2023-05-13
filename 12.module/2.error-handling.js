@@ -1,19 +1,20 @@
 // try catch finally
 function readFile(path) {
-  throw new Error('파일 경로를 찾을 수 없음');
-  return '파일의 내용'; // 에러를 던지면 밑에코드는 실행되지 않음.
+  throw new Error('파일 경로를 찾을 수 없음'); // 에러를 던지면 밑에코드는 실행되지 않고 앱이 죽음
+  return '파일의 내용';
 }
 
+// 에러를 발생할 수 있는 함수 readFile
 function processFile(path) {
   let content;
   try {
     content = readFile(path);
-  } catch (err) {
-    console.log(err);
-    // console.log(error.name); // 에러라는 오브젝트의 이름
-    // console.log(error.message); // 에러라는 오브젝트의 메시지
-    // console.log(error.stack); // 에러라는 오브젝트의 경로
-    content = '기본내용';
+  } catch (error) {
+    // console.log(error);
+    console.log('에러 이름: ', error.name); // 에러라는 오브젝트의 이름
+    console.log('에러 메시지: ', error.message); // 에러라는 오브젝트의 메시지
+    console.log('에러 경로: ', error.stack); // 에러라는 오브젝트의 경로
+    content = '기본 내용';
   } finally {
     console.log('성공하든 실패하든 마지막으로 리소스를 정리할 수 있음!');
   }
@@ -21,8 +22,7 @@ function processFile(path) {
   return result;
 }
 
-const result = processFile('경로');
-console.log(result);
+console.log(processFile('경로'));
 
 // throw new Error('에러에 대한 설명 전달 가능')
 // 에러를 강제적으로 발생 시킬 때 사용!, 어플리케이션이 crash 됨
