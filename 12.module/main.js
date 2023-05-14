@@ -1,11 +1,11 @@
 // import { increase as increase1 } from './counter.js';
 // import { increase, getCount } from './counter.js';
-import * as counter from './12.module/counter.js';
-// console.log(count);
+import * as counter from './counter.js';
+console.log(counter.count);
 counter.increase();
 counter.increase();
 counter.increase();
 console.log(counter.getCount());
-// console.log(count);
-// count = -10;
-// console.log(count);
+console.log(counter.count);
+counter.count = -10;
+console.log(counter.count);
