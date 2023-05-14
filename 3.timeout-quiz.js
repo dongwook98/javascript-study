@@ -11,11 +11,15 @@ function runInDelay3(callback, seconds) {
   setTimeout(callback, seconds * 1000);
 }
 
-try {
-  runInDelay3(() => {
-    console.log('타이머 완료');
-  }, -1);
-} catch (error) {
-  console.log(error);
-  console.log('에러 발생함');
-}
+runInDelay3(() => {
+  console.log('타이머 완료 👍');
+}, -5);
+
+// try {
+//   runInDelay3(() => {
+//     console.log('타이머 완료 👍');
+//   }, -5);
+// } catch (error) {
+//   console.log('에러 발생! 🚨');
+//   console.log(error);
+// }
