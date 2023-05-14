@@ -7,8 +7,14 @@ function b() {
   try {
     a();
   } catch (error) {
-    console.log('여기선 이 에러는 못잡는다..');
-    throw error; // 에러를 다시 던짐
+    if (error.message === 'error!') {
+      console.log('에러 잡을 수 있어!');
+    } else {
+      console.log(
+        '생각해보니깐 이 에러는 b 함수에서 핸들링 할 수 없을 것 같군!'
+      );
+      throw error; // 에러를 다시 던짐
+    }
   }
 }
 
@@ -19,7 +25,7 @@ function c() {
 try {
   c();
 } catch (error) {
-  console.log('error Catched!');
+  console.log('c 함수에서 핸들링 할 수 있어! error Catched!');
 }
 console.log('done!!');
 
