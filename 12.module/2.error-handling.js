@@ -1,6 +1,9 @@
 // try catch finally
 function readFile(path) {
-  throw new Error('파일 경로를 찾을 수 없음'); // 에러를 던지면 밑에코드는 실행되지 않고 앱이 죽음
+  if (!path) {
+    throw new Error('파일 경로를 찾을 수 없음'); // 에러를 던지면 밑에코드는 실행되지 않고 앱이 죽음
+  }
+
   return '파일의 내용';
 }
 

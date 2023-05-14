@@ -1,6 +1,9 @@
 // 경로를 받아와서 파일의 내용을 읽어주는 함수
 function readFile(path) {
-  // throw new Error('파일 경로를 찾을 수 없습니다.');
+  if (!path) {
+    throw new Error('파일 경로를 찾을 수 없음'); // 에러를 던지면 밑에코드는 실행되지 않고 앱이 죽음
+  }
+
   return '동욱의 일기 ~~~';
 }
 
@@ -27,4 +30,4 @@ ${content}`;
   return result;
 }
 
-console.log(processFile('경로'));
+console.log(processFile());
