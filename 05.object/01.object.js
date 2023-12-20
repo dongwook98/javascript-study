@@ -1,7 +1,6 @@
-// MDN 객체: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object
-// Object literal {key : value}
+// Object literal { key : value }
 // new Object()
-// object.create();
+// Object.create();
 // key - 문자, 숫자, 문자열, 심볼
 // value - 원시값, 객체 (함수)
 let apple = {
