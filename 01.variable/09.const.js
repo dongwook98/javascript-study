@@ -23,6 +23,6 @@ apple.name = 'green apple';
 apple.color = 'green';
 apple.display = '🍏';
 console.log(apple);
-// ✨ 객체의 내용 수정은 "변수이름이 가르키는 메모리셀의 주소"는 변경되지 않고 "heap의 메모리주소"의 값을 변경하는거기 때문에 객체의 수정은 가능하다.
-
-// ! const는 "변수이름이 가르키는 메모리셀"의 공간에서 재할당이 불가능하다는 것이다.
+// 실제 object는 Heap에 저장되고 변수 이름에는 실제 object가 보관된 메모리 주소를 보관하고 있다.
+// 그래서 const를 써도 Heap에 저장된 실제 object를 수정하는거기 때문에 에러가 나지 않는다.
+// const는 실제 object가 보관된 메모리 셀에 재할당이 불가능하다는것이다.

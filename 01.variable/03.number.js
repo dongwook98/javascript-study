@@ -2,7 +2,7 @@
  * 데이터 타입은 원시(단일 데이터)와 객체(복합 데이터)
  */
 
-let integer = 123; //정수
+let integer = 123; // 정수
 let negative = -123; // 음수
 let double = 1.23; // 실수
 console.log(integer);

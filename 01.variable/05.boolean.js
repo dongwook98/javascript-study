@@ -10,7 +10,8 @@ let isActivated = false;
 let isEnrolled = true;
 console.log(isActivated);
 
-// Falshy 거짓인 값
+console.log('----------------');
+// Falsy 거짓인 값
 console.log(!!0); // ⚠️ !!: 값을 true 나 false 로 변환
 console.log(!!-0);
 console.log(!!'');
@@ -18,6 +19,7 @@ console.log(!!null);
 console.log(!!undefined);
 console.log(!!NaN);
 
+console.log('---------------');
 // Truthy 참인 값
 console.log(!!1);
 console.log(!!-1);
