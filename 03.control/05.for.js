@@ -1,6 +1,5 @@
 // 반복문 Loop Statement
-// MDN for: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for
-// for( 변수선언문; 조건식; 증감식) { }
+// for (변수선언문; 조건식; 증감식) { }
 // 실행순서:
 // 1. 변수선언문
 // 2. 조건식의 값이 참이면 { } 코드블럭을 수행
@@ -17,7 +16,7 @@ for (let i = 0; i < 5; i++) {
   }
 }
 
-// 무한루프 💩
+// 무한루프 💩 반복문을 작성할때 조건이 언젠가는 false가 될 수 있도록 코딩을 하는것이 중요
 // for (;;) {
 //   console.log('🤪');
 // }

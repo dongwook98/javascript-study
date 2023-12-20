@@ -1,8 +1,7 @@
 // 조건문 Conditional Statement
 // switch
-// MDN switch: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/switch
 // if else if else if else if ... else
-// ✨ swith를 언제 써야할까 - 정해진 범위안의 값에 대해 특정한 일을 해야 하는 경우
+// ✨ switch를 언제 써야할까 - 정해진 범위안의 값에 대해 특정한 일을 해야 하는 경우
 let day = 3; // 0:월요일, 1: 화요일... 6: 일요일
 let dayName;
 if (day === 0) {
