@@ -10,10 +10,10 @@ function calculator(a, b, action) {
   if (a < 0 || b < 0) {
     return;
   }
-  let result = action(a, b);
+  let result = action(a, b); // action 콜백함수는 언제 호출될지 모름 고차함수(calculator)가 필요한 순간에 호출
   console.log(result);
   return result;
 }
 
-calculator(-1, -2, add); // 출력안됨
-calculator(1, 2, multiply); // 2
+calculator(-1, -2, add); // add 함수의 참조값, 주소를 calculator 함수에 전달
+calculator(7, 4, multiply); // multiply 함수의 참조값, 주소를 calculator 함수에 전달

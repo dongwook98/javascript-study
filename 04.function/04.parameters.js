@@ -1,6 +1,7 @@
 // 매개변수의 기본값은 무조건 undefined
-// 매개변수의 정보는 함수 내부에서 접근이 가능한 arguments 객체에 저장됨
-// 매개변수 기본값 Default Parameters a = 1,b = 1
+// 함수는 객체이기 때문에 함수라는 객체안에 유용한 arguments 속성이 있음
+// arguments에는 전달된 인자에 대한 정보가 들어있음
+// 매개변수 기본값 Default Parameters a = 1, b = 1
 function add(a = 1, b = 1) {
   console.log(a); // 1
   console.log(b); // 1

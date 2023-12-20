@@ -4,25 +4,7 @@
 // 5, 순회하는 숫자의 두배값을 다 출력하고 싶음
 // function iterate(max, action)
 
-const print = function (num) {
-  return num;
-};
-
-const printTwice = function (num) {
-  return 2 * num;
-};
-
 function iterate(max, action) {
-  for (let i = 0; i <= max; i++) {
-    console.log(action(i)); // 0~max 출력
-  }
-}
-
-iterate(5, print);
-iterate(5, printTwice);
-
-//선생님 풀이
-function iterate2(max, action) {
   for (let i = 0; i < max; i++) {
     action(i);
   }
@@ -35,12 +17,15 @@ function log(num) {
 function doubleAndLog(num) {
   console.log(num * 2);
 }
-iterate2(3, log);
-iterate2(3, doubleAndLog);
-// iterate2(3, (num) => console.log(num));
-// iterate2(3, (num) => console.log(num * 2));
+iterate(3, log);
+iterate(3, doubleAndLog);
+iterate(3, (num) => console.log(num));
+iterate(3, (num) => console.log(num * 2));
 
-//콜백함수 사용예
+// 콜백함수 사용예
+// 콜백함수를 실행한 값을 전달하는것이 아니라
+// 함수 자체를 전달했기 때문에 setTimeout이라는 고차함수에 의해서 즉 3초가 끝났을때
+// setTimeout함수가 우리가 전달한 콜백함수를 호출해줌
 setTimeout(() => {
   console.log('3초뒤 이 함수가 실행될거예요');
 }, 3000);

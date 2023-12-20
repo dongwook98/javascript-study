@@ -8,7 +8,6 @@ console.log(add(1, 2)); // 3
 
 // 화살표 함수 const name = () => { }
 add = (a, b) => a + b;
-
 console.log(add(3, 4)); // 7
 
 // 생성자 함수 const object = new Function(); // 뒤 객체편에서 다룸
