@@ -23,12 +23,12 @@ const obj2 = {
   name: 'js',
 };
 
-console.log(obj1 == obj2); // false -> 서로 다른 메모리주소를 가지므로 false
+console.log(obj1 == obj2); // false -> 서로 다른 참조값(메모리주소)를 가지므로 false
 console.log(obj1 === obj2); // false -> 서로 다른 메모리주소를 가지므로 false
 console.log(obj1.name == obj2.name); // true
 console.log(obj1.name === obj2.name); // true
 
-let obj3 = obj2; // obj3 과 obj2 는 동일한 메모리주소를 갖고있음
+let obj3 = obj2; // obj3 과 obj2 는 동일한 참조값(메모리주소)를 갖고있음(copy by reference)
 console.log(obj3 == obj2); // true
 console.log(obj3 === obj2); // true
 
