@@ -1,11 +1,9 @@
 // Boolean
-// MDN Boolean: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-
-const isTrue = true; //new Boolean(true);
+const isTrue = true; // new Boolean(true); 객체를 사용하면 메모리 더 사용!
 console.log(isTrue.valueOf()); // true
 
 /**
- * Falshy
+ * Falsy
  * 0
  * -0
  * null

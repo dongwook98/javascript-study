@@ -26,19 +26,19 @@ console.log(length); // 5
 // 제거 - 제일 뒤
 let lastItem = fruits.pop(); // 배열 자체를 수정(업데이트)
 console.log(fruits); // [ '🍇', '🍌', '🍎', '🍋' ]
-console.log(lastItem); // 🍑
+console.log(lastItem); // '🍑'
 
 // 제거 - 제일 앞
 lastItem = fruits.shift(); // 배열 자체를 수정(업데이트)
 console.log(fruits); // [ '🍌', '🍎', '🍋' ]
-console.log(lastItem); // 🍇
+console.log(lastItem); // '🍇'
 
 // 중간에 추가 또는 삭제
 const deleted = fruits.splice(1, 1); // 배열 자체를 수정(업데이트)
 console.log(fruits); // [ '🍌', '🍋' ]
 console.log(deleted); // [ '🍎' ]
-fruits.splice(1, 1, '🍎', '🍓');
-console.log(fruits); // [ '🍌', '🍎', '🍓' ] // 배열 자체를 수정(업데이트)
+fruits.splice(1, 1, '🍎', '🍓'); // 배열 자체를 수정(업데이트)
+console.log(fruits); // [ '🍌', '🍎', '🍓' ]
 
 // 잘라진 새로운 배열을 만듬
 let newArr = fruits.slice(0, 2);

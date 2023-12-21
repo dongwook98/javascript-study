@@ -1,10 +1,10 @@
-// MDN Number: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
-
+// Number
 const num1 = 123;
-const num2 = new Number(123);
-console.log(num1); // 123
-console.log(num2); // [Number: 123]
+const num2 = new Number(123); // 객체는 메모리 많이 사용
+console.log(typeof num1); // 원시 number 타입
+console.log(typeof num2); // Number 객체
 
+// static properties
 console.log(Number.MAX_VALUE); // 1.7976931348623157e+308 // e+308은 10의 308승
 console.log(Number.MIN_VALUE); // 5e-324
 console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
@@ -20,7 +20,7 @@ if (Number.isNaN(num1)) {
 
 // 지수표기법 (매우 크거나 작은 숫자를 표기할때 사용, 10의 n승으로 표기)
 const num3 = 102;
-console.log(num3.toExponential()); // '1.02e+2'
+console.log(num3.toExponential()); // 1.02e+2
 
 // 반올림하여 문자열로 변환
 const num4 = 1234.12;
@@ -42,14 +42,15 @@ if (Number.EPSILON > 0 && Number.EPSILON < 1) {
 
 const num = 0.1 + 0.2 - 0.2; // 0.1
 console.log(num); // 0.10000000000000003
-// ? why? 자바스크립트에서 계산을 할 때는 10진수를 각각 2진수로 변환 후 연산을한다음에 2진수를 다시 10진수로 반환한다.
-// ? 결론은 이런 과정에서 정확하게 부동소수점 까지 계산이 되지않는다.
+// why? 자바스크립트에서 계산을 할 때는 10진수를 각각 2진수로 변환 후
+// 연산을한다음에 2진수를 다시 10진수로 반환한다.
+// 결론은 이런 과정에서 정확하게 부동소수점 까지 계산이 되지않는다.
 
 function isEqual(original, expected) {
   return Math.abs(original - expected) < Number.EPSILON;
 }
-console.log(isEqual(1, 1)); // true
-console.log(isEqual(0.1, 0.1)); // true
+console.log(isEqual(1, 1));
+console.log(isEqual(0.1, 0.1));
 console.log(isEqual(num, 0.1)); // true
-// 📌 정리 - 자바스크립트에서 실수끼리 계산할 때 우리가 에상하지 못한 정말 작은 차이가 발생할 수 있다.
+// 정리 - 자바스크립트에서 실수끼리 계산할 때 우리가 에상하지 못한 정말 작은 차이가 발생할 수 있다.
 // 이 작은 차이를 간주하고싶지 않다면 Number에 정의된 static 프로퍼티 EPSILON 를 사용하자.
