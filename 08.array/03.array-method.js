@@ -57,6 +57,7 @@ console.log(arr3);
 
 // 순서를 거꾸로
 const arr4 = arr3.reverse();
+console.log('22', arr3);
 console.log(arr4);
 
 console.clear();
