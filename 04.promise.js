@@ -9,12 +9,13 @@ function runInDelay(seconds) {
   });
 }
 
-runInDelay(2)
-  .then(() => console.log('타이머완료'))
-  .catch(console.error) // .catch(error => console.error(error))
-  .finally(() => console.log('끝났다!'));
-
 // runInDelay(3)
 // .then(필요한일을 수행) // 성공
 // .catch(에러를 처리) // 실패
 // .finally(최종적으로 무조건 호출!) // 성공실패상관없이 호출
+runInDelay(2)
+  .then(() => console.log('타이머 완료'))
+  .catch(console.error) // .catch(error => console.error(error))
+  .finally(() => console.log('끝났다!'));
+
+console.log('실행');
