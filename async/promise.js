@@ -40,7 +40,7 @@ const fetchNumber = new Promise((resolve, reject) => {
 });
 
 fetchNumber
-  .then((num) => num * 2) // ✨ then은 값을 바로 전달 해도 되고 또다른 비동기인 프로미스를 전달 해도 됨
+  .then((num) => num * 2) // then은 값을 바로 전달 해도 되고 또다른 비동기인 프로미스를 전달 해도 됨
   .then((num) => num * 3)
   .then((num) => {
     return new Promise((resolve, reject) => {

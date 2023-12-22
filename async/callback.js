@@ -1,8 +1,6 @@
 'use strict';
 
 // JavaScript is synchronous. 자바스크립트는 동기적이다.
-// 호이스팅이 된 이후부터 코드가 우리가 작성한 순서에 맞춰서 하나하나씩 동기적으로 실행된다는 말
-// hoisting: var, function declaration 선언들이 제일 위로 올라가는것
 // synchronous: 정해진 순서에 맞게 코드가 실행되는 것
 // asynchronous: 비동기적으로 언제 코드가 실행될지 예측 할 수 없는 것
 console.log('1'); // 동기
