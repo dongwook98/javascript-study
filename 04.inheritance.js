@@ -30,8 +30,15 @@ Cat.prototype.hunt = () => {
 const dog1 = new Dog('백구', '🐶', '동욱');
 dog1.printName();
 dog1.play();
+
 const cat1 = new Cat('루비', '🐈');
 cat1.printName();
 cat1.hunt();
 
-//
+console.log(dog1 instanceof Dog);
+console.log(dog1 instanceof Animal);
+console.log(dog1 instanceof Cat);
+
+console.log(cat1 instanceof Dog);
+console.log(cat1 instanceof Animal);
+console.log(cat1 instanceof Cat);
