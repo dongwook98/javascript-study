@@ -1,7 +1,7 @@
 // 단항연산자 Unary Operators
 // + (양)
 // - (음)
-// (!) (부정)
+// ! (부정)
 let a = 5;
 a = -a; // -1 * 5
 console.log(a);
@@ -29,5 +29,5 @@ console.log(+'text'); // NaN
 console.log(+undefined); // NaN
 
 console.log(!!1); // true
-// (!) 부정연산자
-// (!!) 값을 boolean 타입으로 변환함
+// ! 부정연산자
+// !! 값을 boolean 타입으로 변환함

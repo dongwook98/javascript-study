@@ -7,4 +7,4 @@ const sum = add; // 함수 이름을 어딘가에 할당한다는것은 함수�
 console.log(sum(1, 2));
 console.log(add(1, 2));
 
-console.log(add === sum); // true // add와 sum의 메모리 주소는 같다.
+console.log(add === sum); // add와 sum의 메모리 주소는 같다.

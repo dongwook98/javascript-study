@@ -12,7 +12,7 @@ console.log(isActivated);
 
 console.log('----------------');
 // Falsy 거짓인 값
-console.log(!!0); // ⚠️ !!: 값을 true 나 false 로 변환
+console.log(!!0); // !!: 값을 true 나 false 로 변환
 console.log(!!-0);
 console.log(!!'');
 console.log(!!null);

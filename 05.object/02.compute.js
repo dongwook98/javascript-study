@@ -10,16 +10,16 @@ obj.age;
 function getValue(obj, key) {
   return obj[key];
 }
-console.log(getValue(obj, 'name')); // 동욱
+console.log(getValue(obj, 'name'));
 
 function addKey(obj, key, value) {
   obj[key] = value;
 }
 addKey(obj, 'job', 'front-end engineer');
-console.log(obj); // { name: '동욱', age: 26, job: 'front-end engineer' }
+console.log(obj);
 
 function deleteKey(obj, key) {
   delete obj[key];
 }
 deleteKey(obj, 'job');
-console.log(obj); // { name: '동욱', age: 26 }
+console.log(obj);

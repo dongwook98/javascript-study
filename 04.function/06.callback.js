@@ -15,5 +15,6 @@ function calculator(a, b, action) {
   return result;
 }
 
+// 어떤 함수를 전달하냐에 따라서 고차함수안에서 실행되는 함수가 달라짐
 calculator(-1, -2, add); // add 함수의 참조값, 주소를 calculator 함수에 전달
 calculator(7, 4, multiply); // multiply 함수의 참조값, 주소를 calculator 함수에 전달

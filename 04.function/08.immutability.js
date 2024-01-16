@@ -16,7 +16,7 @@ function displayObj(obj) {
 }
 const dongwook = { name: 'dongwook' };
 displayObj(dongwook); // { name: 'Bob' }
-console.log(dongwook); // { name: 'Bob' }
+console.log(dongwook); // { name: 'Bob' } 원본 객체도 변경됨 💩
 
 // 만약 정말 부득이하게 주어진 인자로 부터 상태를 변경해야한다면?
 // 1. 우선 함수 이름부터 변경한다는 느낌을 주도록!

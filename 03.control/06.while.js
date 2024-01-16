@@ -6,16 +6,18 @@ while (num >= 0) {
   num--;
 }
 
-let isActive = false;
+let isActive = true;
 let i = 0;
 while (isActive) {
   console.log('아직 살아있다!');
-  if (i === 3) {
+  if (i === 20) {
     break;
   }
   i++;
 }
 
+// 한번은 무조건 실행되야한다면 do while
+let isActive2 = false;
 do {
   console.log('do-while 아직 살아있다');
-} while (isActive);
+} while (isActive2);
